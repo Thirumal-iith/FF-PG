@@ -45,7 +45,7 @@ implementation:
             jit_compile=False,
             metrics=[]
         )
-        model.fit(train_data, epochs=2)
+        model.fit(train_data, epochs=20)
 
         # Save the trained model
         os.makedirs(os.path.dirname(args.trained_model), exist_ok=True)
